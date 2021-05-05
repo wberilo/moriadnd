@@ -1,4 +1,4 @@
-import { Parallax } from 'react-parallax';
+//import { Parallax } from 'react-parallax';
 
 function Header() {
   return (
