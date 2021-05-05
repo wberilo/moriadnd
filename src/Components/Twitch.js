@@ -1,16 +1,11 @@
-import { TwitchEmbed } from 'react-twitch-embed';
+import { TwitchEmbed, TwitchPlayer } from "react-twitch-embed";
 
 const Twitch = () => {
   return (
     <div>
-      <TwitchEmbed
-        channel="mrchaggy"
-        id="mrchaggy"
-        theme="dark"
-        muted
-      />
+      <TwitchPlayer channel="mrchaggy" parent={['moriadnd.com']}/>
     </div>
   );
-}
+};
 
 export default Twitch;
