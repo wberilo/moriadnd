@@ -1,4 +1,4 @@
-import { TwitchEmbed, TwitchPlayer } from "react-twitch-embed";
+import { TwitchPlayer } from "react-twitch-embed";
 
 const Twitch = () => {
   return (
