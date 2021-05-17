@@ -1,24 +1,43 @@
-import { Parallax } from 'react-parallax';
+import Carousel from "react-bootstrap/Carousel";
+import Moriastarmapb from './Moriastarmapb.png'
 
 function Header() {
-  const image1 = 'https://images.unsplash.com/photo-1498092651296-641e88c3b057?auto=format&fit=crop&w=1778&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs='
-  const insideStyles = {
-    padding: 20,
-    position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%,-50%)"
-  };
   return (
-    <div className="Header">
-      <div>
-        <Parallax bgImage={image1} strength={500}>
-          <div style={{ height: 500 }}>
-            <div style={insideStyles}><h1>Moria</h1></div>
-          </div>
-        </Parallax>
-      </div>
-    </div>
+    <Carousel fade className="carousel">
+    <Carousel.Item className="carousel" interval={5000}>
+      <img
+        className="d-block w-100"
+        src={Moriastarmapb}
+        alt="First slide"
+      />
+      <Carousel.Caption>
+        <h3>First slide label</h3>
+        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item className="carousel" interval={5000}>
+      <img
+        className="d-block w-100"
+        src={Moriastarmapb}
+        alt="Second slide"
+      />
+      <Carousel.Caption>
+        <h3>Second slide label</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+    <Carousel.Item className="carousel">
+      <img
+        className="d-block w-100"
+        src={Moriastarmapb}
+        alt="Third slide"
+      />
+      <Carousel.Caption>
+        <h3>Third slide label</h3>
+        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      </Carousel.Caption>
+    </Carousel.Item>
+  </Carousel>
   );
 }
 
